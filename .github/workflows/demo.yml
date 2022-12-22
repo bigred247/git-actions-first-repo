@@ -5,6 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Welcome greeting
-        run: echo "Welcome to the demo workflow"
+        run: |
+          echo "Welcome to the demo workflow"
+          echo "first job is currently running"
       - name: Goodbye greeting
-        run: echo "Bye for now"
+        run: |
+          echo "first job has completed"
+          echo "Bye for now"
