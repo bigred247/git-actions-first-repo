@@ -12,3 +12,9 @@ jobs:
         run: |
           echo "first job has completed"
           echo "Bye for now"
+
+      - name: Check out Git repository
+        uses: actions/checkout@v2
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1.5.0
